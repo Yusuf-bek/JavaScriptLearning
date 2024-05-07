@@ -53,3 +53,24 @@ console.log("is undefined equal to undefined: ", undefined == undefined)
 // undefined = nothing with no identity
 
 // nothing = nothing
+
+
+
+// Experiment
+
+let randomVariable;
+
+console.log(randomVariable == null);
+// => true
+
+// But, lets say if you wanna check precisely 
+// (null == undefined) equals to true
+// if you wanna get false in this case
+
+// use this operators
+
+console.log("Is this values precisely equal: ",null === undefined)
+// => false
+
+console.log(null !== undefined)
+// => true
