@@ -30,3 +30,26 @@ console.log(true == 1)
 
 // first time i have seen it in python
 // which languages converts 0 to false and 1 to true when it is needed
+
+
+console.log('is undefined equal to null: ', undefined == null)
+// => true
+
+// some conclusions 
+// null is a value, any variable could be null 
+
+console.log("is null equal to null: ", null == null)
+// => true
+console.log("is undefined equal to undefined: ", undefined == undefined)
+// => true
+
+// difference between null and undefined is 
+// undefined is nothing with identity of nothing
+// the null could be string, integer or anything with no value 
+// 
+// just basically saying null and undefined has basically same genes
+//
+// null = nothing with identity
+// undefined = nothing with no identity
+
+// nothing = nothing
