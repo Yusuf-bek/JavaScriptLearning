@@ -89,3 +89,25 @@ console.log(8 && "nimadurla")
 // these are values that become false after conversion to Boolean
 
 
+// Exercises
+console.log("\nExercises \n")
+// try to find answers without running code
+
+console.log(null ?? null ?? "Im not null bro")
+// => Im not null bro
+
+console.log("" || false && 38)
+// => false
+
+console.log("im no null" && null || 2003)
+// => 2003
+
+console.log("" || null || NaN)
+// => NaN
+
+console.log(48 && 38 && "flutter00" && "bro" || "Nah i should be compiled and returned")
+// => bro
+
+console.log("ha" ? "u to'g'ri" : "ha")
+// => u to'g'ri
+
