@@ -66,5 +66,50 @@ const roundTo = function(n, step){
     // return n - remainder + (remainder > step / 2 ? step : 0)
 }
 
-console.log(roundTo(200, 3))
+console.log(roundTo(212, 47))
+
+
+
+//////////////////////////////////////
+
+function nimdaur()
+{
+    console.log("Nimadurla")
+    
+    // here function is returning undefined
+    return
+    // without the word return it also returns undefined
+}
+
+let myVal = nimdaur()
+
+console.log(myVal)
+
+
+
+// Bindings and Scopes
+
+let x = 3; // Global
+if(34 > x){
+    let y = 4; // Local
+    var oldStyleBinding = 463; // Also Global
+}
+
+// Each scope can look out to other bindings which are available for itself
+
+// when a scope's inner binding and some binding outside of that scope 
+// has same name, then scope will use its own inner binding
+
+function thisIsScope(a){
+    return a * 5
+}
+
+let a = 49;
+
+console.log(a)
+// => 49
+
+console.log(thisIsScope(a))
+// => 245
+
 
