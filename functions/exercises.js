@@ -15,20 +15,20 @@ function isEven(naturalNumber){
     } else if(naturalNumber == 1){
         return false
     } else if(naturalNumber < 0){
-        return undefined
+        return isEven(-naturalNumber)
     }
     return isEven(naturalNumber - 2)
 }
 // It is not good approach for bigger numbers
 
-console.log("isEven: ",isEven(4154))
+console.log("isEven: ",isEven(-415))
 
 
 // 2) approach (without recursion)
 
 function isOdd(naturalNumber){
     if(naturalNumber < 0){
-        return undefined
+        return isOdd(-naturalNumber)
     }
 
     while(naturalNumber > 1){
@@ -46,7 +46,7 @@ function isOdd(naturalNumber){
 // it is not good approach for bigger numbers
 // but better than first approach
 
-console.log("isOdd: ",isOdd(455489))
+console.log("isOdd: ",isOdd(-455489.5))
 
 
 // Third approach 
