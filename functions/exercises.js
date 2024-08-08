@@ -64,3 +64,23 @@ function isItOdd(naturalNumber){
 console.log("isItOdd: ",isItOdd(38828399283913211323))
 
 // This is best approach among three of them
+
+
+// Count "B"s in String
+
+function countChar(anyString, char){
+
+    stringLength = anyString.length
+    counter = 0;
+    for(a = 0; a < stringLength; a++){
+        if(anyString[a] == char){
+            counter++
+        }
+    }  
+    
+    return counter
+}
+
+
+console.log(countChar("ThBfldsajalkdfBng", "r"))
+// => 0
