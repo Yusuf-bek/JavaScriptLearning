@@ -54,7 +54,7 @@ let myDays = [
     },
     {
         day: "I do not know, this is some day",
-        events: ['eat', 'sleep', 'workout'],
+        events: ['eat', 'sleep', 'workout', "PRAY SALAH"],
         isMarried: false
     }
 
@@ -62,18 +62,18 @@ let myDays = [
 
 
 
-let firsObject = {first: 12}
-let secondObject = firsObject
+let firstObject = {first: 12}
+let secondObject = firstObject
 let thirdObject = {first: 12}
 
-console.log(firsObject == thirdObject)
+console.log(firstObject == thirdObject)
 // => false
 
-console.log(firsObject == secondObject)
+console.log(firstObject == secondObject)
 // => true
 
-firsObject.first = 13
-console.log(firsObject)
+firstObject.first = 13
+console.log(firstObject)
 // => 13
 console.log(secondObject)
 // => 13
@@ -120,3 +120,4 @@ journal.push(['this is good', 'great way of dealing with '])
 console.log(journal)
 
 
+/////////////////////////////////
