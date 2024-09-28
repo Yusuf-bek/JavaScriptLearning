@@ -76,5 +76,51 @@ console.log(mySumFunction(myRangeFunction(1, 10)))
 
 // console.log(myRangeFunction(1, 19))
 
+// now i know why, i was putting 
+// i++ to place of i <= end
+// in short places of these two were reversed
+
 
 console.log(myRangeFunction(2, 2, 54))
+// My range function is now more advanced
+
+
+
+
+// REVERSING ARRAY
+
+function reverseArray(givenArray){
+    // this function takes an array 
+    // and returns reversed array which contains values of [givenArray]
+    
+    lengthOfArray = givenArray.length
+    
+    result = []
+
+    for(i = lengthOfArray - 1; i >= 0; i--){
+        result.push(givenArray[i])
+    }
+
+    return result
+}
+
+console.log(reverseArray([4,3,2,5,3,2]))
+
+console.log(reverseArray([49983, 838, 88, 9, 83, 993, 8829, 82898, 829, 88, 89839,843892]))
+
+
+
+function reverseArrayInPlace(givenArray){
+    givenArray.reverse()
+}
+
+someArray = [3, 5, 0, 9, 9, 87]
+
+console.log(someArray)
+
+reverseArrayInPlace(someArray)
+
+console.log(someArray)
+
+// i thought there is no need to recrease Array.prototype.reverse()
+// method, in other word i left it to do it maybe later
