@@ -1,0 +1,7 @@
+{
+    "name": "Ogabek",
+    "surname": "Sherakhmatov",
+    "age": 21,
+    "skills": ["keyboard typing" ,"coding" ,"problem-solving"],
+    "isMarried": false
+}
